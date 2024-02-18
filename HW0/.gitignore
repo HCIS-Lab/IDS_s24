@@ -158,3 +158,4 @@ cython_debug/
 /carla_14
 
 checkpoints/
+results/
