@@ -6,8 +6,11 @@ This homework will guide you through the installation of CARLA and provide 4 dri
 
 ## System Requirements
 - Unbuntu 18.04 or 20.04
-- 8GB GPU or even better
-- At least 50GB free space
+- Intel i7 gen 9th - 14th / Intel i9 gen 9th - 14th / AMD ryzen 7 / AMD ryzen 9
+- 16 GB RAM memory
+- 8GB GPU or even better, e.g.:
+  - NVIDIA RTX 2070 / NVIDIA RTX 2080 / NVIDIA RTX 3070, NVIDIA RTX 3080 
+- At least 50GB free space (not including the space for training data in future homeworks or your project)
 
 ## Setting up your environment
 In this homework we will use 2 versions of CARLA, 0.9.10 and 0.9.14, the version depending on which benchmark you choose. This section will guide you through the installation steps of both versions, and the corresponding version of each benchmark will be specified  in the [Benchmark](#benchmark) section.
