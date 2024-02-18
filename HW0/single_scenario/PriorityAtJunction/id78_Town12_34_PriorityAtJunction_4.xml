@@ -1,0 +1,15 @@
+<route id="78" town="Town12">
+  <weathers>
+    <weather route_percentage="0" cloudiness="5.0" precipitation="0.0" precipitation_deposits="0.0" wetness="0.0" wind_intensity="10.0" sun_azimuth_angle="-1.0" sun_altitude_angle="-90.0" fog_density="60.0"/>
+    <weather route_percentage="100" cloudiness="80.0" precipitation="60.0" precipitation_deposits="60.0" wetness="80.0" wind_intensity="60.0" sun_azimuth_angle="-1.0" sun_altitude_angle="-90.0" fog_density="60.0"/>
+  </weathers>
+  <waypoints>
+    <position x="872.2" y="3686.4" z="371.1"/>
+    <position x="811.3" y="3676.1" z="371.4"/>
+  </waypoints>
+  <scenarios>
+    <scenario name="PriorityAtJunction_4" type="PriorityAtJunction">
+      <trigger_point x="838.3" y="3680.7" z="371.2" yaw="189.6"/>
+    </scenario>
+  </scenarios>
+</route>

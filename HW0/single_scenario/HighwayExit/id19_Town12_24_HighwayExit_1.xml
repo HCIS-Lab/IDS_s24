@@ -1,0 +1,19 @@
+<route id="19" town="Town12">
+  <weathers>
+    <weather route_percentage="0" cloudiness="5.0" precipitation="0.0" precipitation_deposits="50.0" wetness="0.0" wind_intensity="10.0" sun_azimuth_angle="-1.0" sun_altitude_angle="15.0" fog_density="10.0"/>
+    <weather route_percentage="100" cloudiness="5.0" precipitation="0.0" precipitation_deposits="0.0" wetness="0.0" wind_intensity="10.0" sun_azimuth_angle="-1.0" sun_altitude_angle="45.0" fog_density="2.0"/>
+  </weathers>
+  <waypoints>
+    <position x="1671.4" y="3098.7" z="362.1"/>
+    <position x="2342.8" y="3141.0" z="361.3"/>
+  </waypoints>
+  <scenarios>
+    <scenario name="HighwayExit_1" type="HighwayExit">
+      <trigger_point x="2028.4" y="3098.7" z="356.9" yaw="0.7"/>
+      <start_actor_flow x="1999.1" y="3101.9" z="357.1"/>
+      <end_actor_flow x="2310.6" y="3112.8" z="357.7"/>
+      <flow_speed value="13"/>
+      <source_dist_interval from="25" to="40"/>
+    </scenario>
+  </scenarios>
+</route>

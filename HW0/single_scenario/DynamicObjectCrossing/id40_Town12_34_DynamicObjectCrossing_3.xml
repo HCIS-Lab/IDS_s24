@@ -1,0 +1,18 @@
+<route id="40" town="Town12">
+  <weathers>
+    <weather route_percentage="0" cloudiness="5.0" precipitation="0.0" precipitation_deposits="0.0" wetness="0.0" wind_intensity="10.0" sun_azimuth_angle="-1.0" sun_altitude_angle="45.0" fog_density="50.0"/>
+    <weather route_percentage="100" cloudiness="5.0" precipitation="0.0" precipitation_deposits="0.0" wetness="0.0" wind_intensity="10.0" sun_azimuth_angle="-1.0" sun_altitude_angle="15.0" fog_density="50.0"/>
+  </weathers>
+  <waypoints>
+    <position x="3747.3" y="4334.9" z="368.5"/>
+    <position x="3715.5" y="4538.1" z="368.1"/>
+  </waypoints>
+  <scenarios>
+    <scenario name="DynamicObjectCrossing_3" type="DynamicObjectCrossing">
+      <trigger_point x="3731.5" y="4435.2" z="368.3" yaw="98.9"/>
+      <distance value="45"/>
+      <blocker_model value="static.prop.busstoplb"/>
+      <crossing_angle value="10"/>
+    </scenario>
+  </scenarios>
+</route>
