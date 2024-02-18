@@ -24,7 +24,7 @@ In this homework we will use 2 versions of CARLA, 0.9.10 and 0.9.14, the version
       ./CarlaUE4.sh
       ``` 
       If you see a screen like this, it means CARLA 0.9.10 is successfully installed.
-      ![](./assests/carla_10_example.png)
+      ![](./assets/carla_10_example.png)
 
 ### CARLA 0.9.14
   1. Download the packaged [CARLA release](https://leaderboard-public-contents.s3.us-west-2.amazonaws.com/CARLA_Leaderboard_2.0.tar.xz).
@@ -35,4 +35,4 @@ In this homework we will use 2 versions of CARLA, 0.9.10 and 0.9.14, the version
       ./CarlaUE4.sh
       ``` 
       If you see a screen like this, it means CARLA 0.9.14 is successfully installed.
-      ![](./assests/carla_14_example.png)    
+      ![](./assets/carla_14_example.png)    

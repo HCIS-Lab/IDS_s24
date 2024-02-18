@@ -1,9 +1,10 @@
-# CARLA Leaderboard 0.9.10.1
+# Longest6 tiny
 
-This code is taken from the official leaderboard repository, with some minor changes for the Longest6 evaluation. The changes are made in a local copy of the original files, named `*_local.py`. The main changes include:
+This code is taken from the official CARLA leaderboard 1.0 repository, with some minor changes for the Longest6 tiny evaluation. The changes are made in a local copy of the original files, named `*_local.py`. The main changes include:
 
 1. Dense traffic: https://github.com/autonomousvision/transfuser/blob/ff02e6fffa961e473a6a6486f387582349dc7f44/leaderboard/leaderboard/scenarios/route_scenario_local.py#L449
 2. No penalty for stop infractions: https://github.com/autonomousvision/transfuser/blob/ff02e6fffa961e473a6a6486f387582349dc7f44/leaderboard/leaderboard/utils/statistics_manager_local.py#L26
+3. To reduce the evaluation time we only select 1 representative route from each town, resulting 6 evaluation routes in total and name it "Longest6 tiny".
 
 ## Original README.md
 The main goal of the CARLA Autonomous Driving Leaderboard is to evaluate the driving proficiency of autonomous agents in realistic traffic situations. The leaderboard serves as an open platform for the community to perform fair and reproducible evaluations, simplifying the comparison between different approaches.
