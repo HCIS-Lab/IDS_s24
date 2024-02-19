@@ -13,9 +13,9 @@ import pytorch_lightning as pl
 from pytorch_lightning.callbacks import ModelCheckpoint
 from pytorch_lightning.plugins import DDPPlugin
 
-from TCP.model import TCP
-from TCP.data import CARLA_Data
-from TCP.config import GlobalConfig
+from model import TCP
+from data import CARLA_Data
+from config import GlobalConfig
 
 
 class TCP_planner(pl.LightningModule):
