@@ -65,7 +65,7 @@ In this homework we will use 2 versions of CARLA, 0.9.10 and 0.9.14, the version
 
 ### TCP
   
-  [Paper](https://arxiv.org/pdf/2206.08129.pdf), [GitHub](https://github.com/OpenDriveLab/TCP)
+  [Paper](https://arxiv.org/pdf/2206.08129.pdf), [GitHub](https://github.com/OpenDriveLab/TCP), [Model_ckpt](https://hkustconnect-my.sharepoint.com/personal/qzhangcb_connect_ust_hk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fqzhangcb%5Fconnect%5Fust%5Fhk%2FDocuments%2FPublic%5FShared%5FOnline%2FPre%2Dtrain%20weights%2FTPC%5FTrained%5FModel%2Fbest%5Fmodel%2Eckpt&parent=%2Fpersonal%2Fqzhangcb%5Fconnect%5Fust%5Fhk%2FDocuments%2FPublic%5FShared%5FOnline%2FPre%2Dtrain%20weights%2FTPC%5FTrained%5FModel&ga=1)
 
 ### PlanT
   [Paper](https://arxiv.org/pdf/2210.14222.pdf), [GitHub](https://github.com/autonomousvision/plant)
