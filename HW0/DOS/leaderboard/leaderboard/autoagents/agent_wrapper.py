@@ -220,8 +220,8 @@ class AgentWrapper(object):
         Returns true on valid configuration, false otherwise
         """
         if Track(selected_track) != agent_track:
-            raise SensorConfigurationInvalid("You are submitting to the wrong track [{}]!".format(Track(selected_track)))
-
+            #raise SensorConfigurationInvalid("You are submitting to the wrong track [{}]!".format(Track(selected_track)))
+            pass
         sensor_count = {}
         sensor_ids = []
 

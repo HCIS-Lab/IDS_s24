@@ -24,6 +24,7 @@ export CHECKPOINT_ENDPOINT=${HOMEWORK_DIR}/results/DOS/${MODEL_NAME}/DOS_01_resu
 export SCENARIOS=${HOMEWORK_DIR}/DOS/DOS_benchmark/DOS_01_town05.json
 export SAVE_PATH=${HOMEWORK_DIR}/results/DOS/${MODEL_NAME} # path for saving episodes while evaluating
 export RESUME=True
+export DIRECT=1
 
 python3 ${LEADERBOARD_ROOT}/leaderboard/leaderboard_evaluator.py \
 --scenarios=${SCENARIOS}  \
