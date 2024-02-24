@@ -100,4 +100,4 @@ In this homework we will use 2 versions of CARLA, 0.9.10 and 0.9.14, the version
   [Paper](https://arxiv.org/pdf/2210.14222.pdf), [GitHub](https://github.com/autonomousvision/plant)
 
 ## Submission
-Please submit a 1 minute video of you running mannul_control.py on 1 version of CARLA before 3/6 23:59, this sumbission counts for 2% of your final score. 
+Please submit a 1 minute video of you running mannul_control.py on 1 version of CARLA before 3/6 23:59, this sumbission accounts for 2% of your final score. 
