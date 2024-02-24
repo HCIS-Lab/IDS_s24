@@ -4,6 +4,8 @@ In the following homeworks and final project we will need to use the CARLA simul
 
 This homework will guide you through the installation of CARLA and provide 4 driving benchmarks and 3 different baseline driving models to give you a quick view on how autonomous driving systems looked like in CARLA.
 
+We expect you to start to investigate the topic of your midterm presentation and final project based on your observation after running some of the baselines on one or more benchmarks we provided.
+
 ## System Requirements
 - Unbuntu 18.04 or 20.04
 - Intel i7 gen 9th - 14th / Intel i9 gen 9th - 14th / AMD ryzen 7 / AMD ryzen 9
@@ -42,20 +44,47 @@ In this homework we will use 2 versions of CARLA, 0.9.10 and 0.9.14, the version
 
 ## Benchmark
 ### Longest6
-   
+1. Start a CARLA 0.9.10 server
+    ```shell
+    cd carla_10
+    ./CarlaUE4.sh
+    ```
+2. Open another terminal
+    ```shell
+    cd HW0
+    bash longest6/scripts/local_evaluation.sh ${CARLA_ROOT} ${HOMEWORKD_ROOT} ${MODEL_NAME}
+    # e.g. bash longest6/scripts/local_evaluation.sh ./carla_10 . TFPP
+    ```
+
 
 [Paper](https://www.cvlibs.net/publications/Chitta2022PAMI.pdf), [GitHub](https://github.com/autonomousvision/transfuser?tab=readme-ov-file)
 
 ### DOS
-  
+1. Start a CARLA 0.9.10 server
+    ```shell
+    cd carla_10
+    ./CarlaUE4.sh
+    ```
+2. Open another terminal
+    ```shell
+    cd HW0
+    bash longest6/scripts/local_evaluation.sh ${CARLA_ROOT} ${HOMEWORKD_ROOT} ${MODEL_NAME}
+    # e.g. bash longest6/scripts/local_evaluation.sh ./carla_10 . TFPP
 
- [Paper](https://arxiv.org/pdf/2305.10507.pdf), [GitHub](https://github.com/opendilab/DOS)
+  [Paper](https://arxiv.org/pdf/2305.10507.pdf), [GitHub](https://github.com/opendilab/DOS)
 
-### Interaction
-  
 
 ### CARLA leaderboard 2.0
-  
+1. Start a CARLA 0.9.14 server
+    ```shell
+    cd carla_14
+    ./CarlaUE4.sh
+    ```
+2. Open another terminal
+    ```shell
+    cd HW0
+    bash leaderboard_2.0/scripts/run_evaluation.sh ${CARLA_ROOT} ${HOMEWORKD_ROOT} ${MODEL_NAME}
+    # e.g. bash leaderboard_2.0/scripts/run_evaluation.sh ./carla_14 . TFPP
   [CARLA leaderboard 2.0](https://leaderboard.carla.org/get_started/)
 
 ## Baseline
@@ -71,4 +100,4 @@ In this homework we will use 2 versions of CARLA, 0.9.10 and 0.9.14, the version
   [Paper](https://arxiv.org/pdf/2210.14222.pdf), [GitHub](https://github.com/autonomousvision/plant)
 
 ## Submission
-You don’t need to submit anything in this homework, but it is important for you to go through the steps in this homework, and we expecting you to start to investigate the topic of your midterm presentation and final project based on your observation after running some of the baselines on one or more benchmarks we provided.
+Please submit a 1 minute video of you running mannul_control.py on 1 version of CARLA before 3/6 23:59, this sumbission counts for 2% of your final score. 
