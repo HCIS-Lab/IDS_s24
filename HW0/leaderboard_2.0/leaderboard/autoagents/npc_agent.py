@@ -31,9 +31,18 @@ class NpcAgent(AutonomousAgent):
         """
         Setup the agent parameters
         """
-        self.track = Track.SENSORS
-
+        self.track = Track.MAP
         self._agent = None
+        
+        
+        # Privileged
+        self._vehicle = CarlaDataProvider.get_hero_actor()
+        self._world = self._vehicle.get_world()
+        
+        
+    
+        
+        
 
     def sensors(self):
         """
@@ -54,8 +63,25 @@ class NpcAgent(AutonomousAgent):
         """
 
         sensors = [
-            {'type': 'sensor.camera.rgb', 'x': 0.7, 'y': -0.4, 'z': 1.60, 'roll': 0.0, 'pitch': 0.0, 'yaw': 0.0,
-             'width': 300, 'height': 200, 'fov': 100, 'id': 'Left'},
+            
+            {'type': 'sensor.opendrive_map', 'id': 'OpenDRIVE', 'reading_frequency': 1},
+            # {
+            #     'type': 'sensor.other.imu',
+            #     'x': 0.0,
+            #     'y': 0.0,
+            #     'z': 0.0,
+            #     'roll': 0.0,
+            #     'pitch': 0.0,
+            #     'yaw': 0.0,
+            #     'sensor_tick': 0.05,
+            #     'id': 'imu'
+            # }, {
+            #     'type': 'sensor.speedometer',
+            #     'reading_frequency': 20,
+            #     'id': 'speed'
+            # }
+            # {'type': 'sensor.camera.rgb', 'x': 0.7, 'y': -0.4, 'z': 1.60, 'roll': 0.0, 'pitch': 0.0, 'yaw': 0.0,
+            #  'width': 300, 'height': 200, 'fov': 100, 'id': 'Left'},
         ]
 
         return sensors
@@ -64,6 +90,14 @@ class NpcAgent(AutonomousAgent):
         """
         Execute one step of navigation. 
         """
+        
+        print(input_data.keys())
+        
+        # input_data['hd_map']
+        
+        # print( self._global_plan_world_coord)
+        # print(len( self._global_plan_world_coord))
+        
         if not self._agent:
 
             # Search for the ego actor

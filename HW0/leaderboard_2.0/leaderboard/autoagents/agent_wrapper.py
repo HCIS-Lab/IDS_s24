@@ -22,7 +22,7 @@ from leaderboard.envs.sensor_interface import CallBack, OpenDriveMapReader, Spee
 from leaderboard.autoagents.autonomous_agent import Track
 from leaderboard.autoagents.ros_base_agent import ROSBaseAgent
 
-MAX_ALLOWED_RADIUS_SENSOR = 3.0
+MAX_ALLOWED_RADIUS_SENSOR = 10.0 #3.0 # 
 SENSORS_LIMITS = {
     'sensor.camera.rgb': 4,
     'sensor.lidar.ray_cast': 1,
@@ -30,7 +30,10 @@ SENSORS_LIMITS = {
     'sensor.other.gnss': 1,
     'sensor.other.imu': 1,
     'sensor.opendrive_map': 1,
-    'sensor.speedometer': 1
+    'sensor.speedometer': 1,
+    'sensor.camera.semantic_segmentation': 4, # for data generation
+    'sensor.camera.depth': 4 # for data generation
+    
 }
 ALLOWED_SENSORS = SENSORS_LIMITS.keys()
 
@@ -141,6 +144,17 @@ class AgentWrapper(object):
             sensor_rotation = carla.Rotation()
 
         if type_ == 'sensor.camera.rgb':
+            attributes['image_size_x'] = str(sensor_spec['width'])
+            attributes['image_size_y'] = str(sensor_spec['height'])
+            attributes['fov'] = str(sensor_spec['fov'])
+
+            sensor_location = carla.Location(x=sensor_spec['x'], y=sensor_spec['y'],
+                                             z=sensor_spec['z'])
+            sensor_rotation = carla.Rotation(pitch=sensor_spec['pitch'],
+                                             roll=sensor_spec['roll'],
+                                             yaw=sensor_spec['yaw'])
+            
+        elif type_ == 'sensor.camera.semantic_segmentation': # For data collection 
             attributes['image_size_x'] = str(sensor_spec['width'])
             attributes['image_size_y'] = str(sensor_spec['height'])
             attributes['fov'] = str(sensor_spec['fov'])
