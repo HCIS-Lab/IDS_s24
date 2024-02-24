@@ -68,4 +68,4 @@ In this homework we will use 2 versions of CARLA, 0.9.10 and 0.9.14, the version
   [Paper](https://arxiv.org/pdf/2210.14222.pdf), [GitHub](https://github.com/autonomousvision/plant)
 
 ## Submission
-You don’t need to submit anything in this homework, but it is important for you to go through the steps in this homework, since we expect you to start to investigate what will be the topic of your midterm presentation and final project based on your observation after running several baselines on one or more benchmarks we provided.
+You don’t need to submit anything in this homework, but it is important for you to go through the steps in this homework, and we expecting you to start to investigate the topic of your midterm presentation and final project based on your observation after running some of the baselines on one or more benchmarks we provided.
