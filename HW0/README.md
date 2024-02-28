@@ -17,6 +17,7 @@ We expect you to start to investigate the topic of your midterm presentation and
 ## Setting up your environment
 In this homework we will use 2 versions of CARLA, 0.9.10 and 0.9.14, the version depending on which benchmark you choose. This section will guide you through the installation steps of both versions, and the corresponding version of each benchmark will be specified  in the [Benchmark](#benchmark) section.
 
+
 ### CARLA 0.9.10
   1. Download the packaged CARLA realse  
       ```shell
@@ -46,12 +47,18 @@ In this homework we will use 2 versions of CARLA, 0.9.10 and 0.9.14, the version
       ``` 
       If you see a screen like this, it means CARLA 0.9.14 is successfully installed.
       ![](./assets/carla_14_example.png)
-  4. Run manual_control, open another terminal
-    ```shell
-    cd carla_14/PythonAPI/examples
-    python manual_control.py
-    ``` 
 
+### Create conda environment
+```shell
+conda env create -f environment.yml
+```
+
+### Manual control
+  open another terminal
+  ```shell
+  cd carla_14/PythonAPI/examples
+  python manual_control.py
+  ``` 
 
 ## Benchmark
 ### Longest6
@@ -81,8 +88,11 @@ In this homework we will use 2 versions of CARLA, 0.9.10 and 0.9.14, the version
     cd HW0
     bash DOS/leaderboard/scripts/run_evaluation.sh ${CARLA_ROOT} ${HOMEWORKD_ROOT} ${MODEL_NAME}
     # e.g. bash longest6/scripts/local_evaluation.sh ./carla_10 . TCP
+    ```
+3. Update [DOS/leaderboard/scripts/run_evaluation.sh](./DOS/leaderboard/scripts/run_evaluation.sh) by setting `ROUTES` to `DOS_benchmark/DOS_0X_town05.xml`, `SCENARIOS` to `DOS_benchmark/DOS_0X_town05.json` (where X is the scenario id), and ensuring that `TEAM_CONFIG`, `TEAM_AGENT`, and `CARLA_ROOT` are correctly configured.
 
-  [Paper](https://arxiv.org/pdf/2305.10507.pdf), [GitHub](https://github.com/opendilab/DOS)
+    [Paper](https://arxiv.org/pdf/2305.10507.pdf), [GitHub](https://github.com/opendilab/DOS)
+
 
 
 ### CARLA leaderboard 2.0

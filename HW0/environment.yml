@@ -1,0 +1,12 @@
+name: HW0
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - ca-certificates
+  - freetype
+  - libpng
+  - python=3.7
+  - pip
+  - pip:
+    - -r requirements.txt
