@@ -133,4 +133,4 @@ conda activate HW0
   [Paper](https://arxiv.org/pdf/2210.14222.pdf), [GitHub](https://github.com/autonomousvision/plant)
 
 ## Submission
-Please submit a 1 minute video of you running mannul_control.py on 1 version of CARLA before 3/6 23:59 to E3, this sumbission accounts for 2% of your final score. 
+Please submit a 15 second video of you running mannul_control.py on 1 version of CARLA before 3/6 23:59 to E3, this sumbission accounts for 2% of your final score. 
