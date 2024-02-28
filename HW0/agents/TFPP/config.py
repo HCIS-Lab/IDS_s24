@@ -294,7 +294,7 @@ class GlobalConfig:
     self.clip_throttle = 0.75  # Maximum throttle allowed by the controller
 
     # Whether the model in and outputs will be visualized and saved into SAVE_PATH
-    self.debug = True
+    self.debug = False
 
     # -----------------------------------------------------------------------------
     # Logger
