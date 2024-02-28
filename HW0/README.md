@@ -68,7 +68,7 @@ conda activate HW0
 2. Open another terminal
     ```shell
     cd HW0
-    bash longest6/scripts/run_evaluation.sh ${CARLA_ROOT} ${HOMEWORKD_ROOT} ${MODEL_NAME}
+    bash longest6/scripts/run_evaluation.sh ${CARLA_ROOT} ${HOMEWORK_DIR} ${MODEL_NAME}
     # e.g. bash longest6/scripts/run_evaluation.sh ./carla_10 . TFPP
     ```
 
@@ -84,7 +84,7 @@ conda activate HW0
 2. Open another terminal
     ```shell
     cd HW0
-    bash DOS/leaderboard/scripts/run_evaluation.sh ${CARLA_ROOT} ${HOMEWORKD_ROOT} ${MODEL_NAME}
+    bash DOS/leaderboard/scripts/run_evaluation.sh ${CARLA_ROOT} ${HOMEWORK_DIR} ${MODEL_NAME}
     # e.g. bash longest6/scripts/local_evaluation.sh ./carla_10 . TCP
     ```
 3. Update [DOS/leaderboard/scripts/run_evaluation.sh](./DOS/leaderboard/scripts/run_evaluation.sh) by setting `ROUTES` to `DOS_benchmark/DOS_0X_town05.xml`, `SCENARIOS` to `DOS_benchmark/DOS_0X_town05.json` (where X is the scenario id), and ensuring that `TEAM_CONFIG`, `TEAM_AGENT`, and `CARLA_ROOT` are correctly configured.
@@ -102,7 +102,7 @@ conda activate HW0
 2. Open another terminal
     ```shell
     cd HW0
-    bash leaderboard_2.0/scripts/run_evaluation.sh ${CARLA_ROOT} ${HOMEWORKD_ROOT} ${MODEL_NAME}
+    bash leaderboard_2.0/scripts/run_evaluation.sh ${CARLA_ROOT} ${HOMEWORK_DIR} ${MODEL_NAME}
     # e.g. bash leaderboard_2.0/scripts/run_evaluation.sh ./carla_14 . TFPP
   [CARLA leaderboard 2.0](https://leaderboard.carla.org/get_started/)
 
