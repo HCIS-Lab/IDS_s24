@@ -17,7 +17,6 @@ We expect you to start to investigate the topic of your midterm presentation and
 ## Setting up your environment
 In this homework we will use 2 versions of CARLA, 0.9.10 and 0.9.14, the version depending on which benchmark you choose. This section will guide you through the installation steps of both versions, and the corresponding version of each benchmark will be specified  in the [Benchmark](#benchmark) section.
 
-
 ### CARLA 0.9.10
   1. Download the packaged CARLA realse  
       ```shell
@@ -110,14 +109,28 @@ conda env create -f environment.yml
 
 ## Baseline
 ### Transfuser++
+  Change ${MODEL_NAME} to `TFPP` ot run Transfuser++ model, e.g.:
+  ```shell
+  bash leaderboard_2.0/scripts/run_evaluation.sh ./carla_14 . TFPP
+  ```
   
- [Paper](https://arxiv.org/pdf/2306.07957.pdf), [GitHub](https://github.com/autonomousvision/carla_garage)
+  [Paper](https://arxiv.org/pdf/2306.07957.pdf), [GitHub](https://github.com/autonomousvision/carla_garage)
 
 ### TCP
-  
+  Change ${MODEL_NAME} to `TCP` ot run TCP model, e.g.:
+  ```shell
+  bash leaderboard_2.0/scripts/run_evaluation.sh ./carla_14 . TCP
+  ```
   [Paper](https://arxiv.org/pdf/2206.08129.pdf), [GitHub](https://github.com/OpenDriveLab/TCP), [Model_ckpt](https://hkustconnect-my.sharepoint.com/personal/qzhangcb_connect_ust_hk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fqzhangcb%5Fconnect%5Fust%5Fhk%2FDocuments%2FPublic%5FShared%5FOnline%2FPre%2Dtrain%20weights%2FTPC%5FTrained%5FModel%2Fbest%5Fmodel%2Eckpt&parent=%2Fpersonal%2Fqzhangcb%5Fconnect%5Fust%5Fhk%2FDocuments%2FPublic%5FShared%5FOnline%2FPre%2Dtrain%20weights%2FTPC%5FTrained%5FModel&ga=1)
 
 ### PlanT
+  Change ${MODEL_NAME} to `PlanT` ot run PlanT model, e.g.:
+  ```shell
+  bash leaderboard_2.0/scripts/run_evaluation.sh ./carla_14 . PlanT
+  ```
+  > **:heavy_exclamation_mark:**
+  > Remember to set `TRACK` to `MAP` before running PlanT
+  
   [Paper](https://arxiv.org/pdf/2210.14222.pdf), [GitHub](https://github.com/autonomousvision/plant)
 
 ## Submission
