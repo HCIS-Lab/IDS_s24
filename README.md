@@ -1,5 +1,5 @@
 # IDS-s24
-NYCU Selected Topics in Intelligent Driving Systems 2024 Spring
+NYCU Special Topics in Intelligent Driving Systems 2024 Spring
 
 ##
 You can choose to create a new fork on you own GitHub account.
