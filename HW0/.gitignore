@@ -157,5 +157,5 @@ cython_debug/
 /carla_10
 /carla_14
 
-checkpoints/
+#checkpoints/
 results/
