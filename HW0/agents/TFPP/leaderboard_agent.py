@@ -508,7 +508,7 @@ class SensorAgent(autonomous_agent.AutonomousAgent):
       else:
         prob_target_speed = pred_target_speed
       #print(self.save_path)
-      self.nets[0].visualize_model(self.save_path,
+      self.nets[0].visualize_model(None,
                                    self.step,
                                    tick_data['rgb'],
                                    lidar_bev,

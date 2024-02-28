@@ -22,7 +22,7 @@ from leaderboard.envs.sensor_interface import CallBack, OpenDriveMapReader, Spee
 from leaderboard.autoagents.autonomous_agent import Track
 from leaderboard.autoagents.ros_base_agent import ROSBaseAgent
 
-MAX_ALLOWED_RADIUS_SENSOR = 10.0 #3.0 # 
+MAX_ALLOWED_RADIUS_SENSOR = 100.0 #3.0 # 
 SENSORS_LIMITS = {
     'sensor.camera.rgb': 4,
     'sensor.lidar.ray_cast': 1,

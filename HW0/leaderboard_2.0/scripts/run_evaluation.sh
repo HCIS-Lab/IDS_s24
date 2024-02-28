@@ -6,9 +6,9 @@ export LEADERBOARD_ROOT=${HOMEWORK_DIR}/leaderboard_2.0
 export SCENARIO_RUNNER_ROOT=${LEADERBOARD_ROOT}/scenario_runner
 export PYTHONPATH="${CARLA_ROOT}/PythonAPI/carla/":"${SCENARIO_RUNNER_ROOT}":"${LEADERBOARD_ROOT}":"${CARLA_ROOT}/PythonAPI/carla/dist/carla-0.9.14-py3.7-linux-x86_64.egg":${PYTHONPATH}
 
-export ROUTES=${LEADERBOARD_ROOT}/Data/AccidentTwoWays/id0_Town12_27_AccidentTwoWays_1.xml
+export ROUTES=${LEADERBOARD_ROOT}/Data/ConstructionObstacleTwoWays.xml
 export REPETITIONS=1
-export CHALLENGE_TRACK_CODENAME=MAP
+export CHALLENGE_TRACK_CODENAME=SENSORS
 export CHECKPOINT_ENDPOINT=${HOMEWORK_DIR}/results/leaderboard_2.0/${MODEL_NAME}/leaderboard_2.0.json
 export TEAM_AGENT=${HOMEWORK_DIR}/agents/${MODEL_NAME}/leaderboard_agent.py
 export TEAM_CONFIG=${HOMEWORK_DIR}/agents/checkpoints/${MODEL_NAME}

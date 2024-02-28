@@ -474,7 +474,8 @@ def main():
     arguments = parser.parse_args()
 
     statistics_manager = StatisticsManager()
-
+    save_path = os.environ.get("SAVE_PATH")
+    os.makedirs(save_path, exist_ok=True)
 
     try:
         leaderboard_evaluator = LeaderboardEvaluator(arguments, statistics_manager)

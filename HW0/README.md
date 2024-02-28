@@ -30,6 +30,11 @@ In this homework we will use 2 versions of CARLA, 0.9.10 and 0.9.14, the version
       ``` 
       If you see a screen like this, it means CARLA 0.9.10 is successfully installed.
       ![](./assets/carla_10_example.png)
+  3. Run manual_control, open another terminal
+      ```shell
+      cd carla_10/PythonAPI/examples
+      python manual_control.py
+      ``` 
 
 ### CARLA 0.9.14
   1. Download the packaged [CARLA release](https://leaderboard-public-contents.s3.us-west-2.amazonaws.com/CARLA_Leaderboard_2.0.tar.xz).
@@ -41,6 +46,12 @@ In this homework we will use 2 versions of CARLA, 0.9.10 and 0.9.14, the version
       ``` 
       If you see a screen like this, it means CARLA 0.9.14 is successfully installed.
       ![](./assets/carla_14_example.png)
+  4. Run manual_control, open another terminal
+    ```shell
+    cd carla_14/PythonAPI/examples
+    python manual_control.py
+    ``` 
+
 
 ## Benchmark
 ### Longest6
@@ -52,8 +63,8 @@ In this homework we will use 2 versions of CARLA, 0.9.10 and 0.9.14, the version
 2. Open another terminal
     ```shell
     cd HW0
-    bash longest6/scripts/local_evaluation.sh ${CARLA_ROOT} ${HOMEWORKD_ROOT} ${MODEL_NAME}
-    # e.g. bash longest6/scripts/local_evaluation.sh ./carla_10 . TFPP
+    bash longest6/scripts/run_evaluation.sh ${CARLA_ROOT} ${HOMEWORKD_ROOT} ${MODEL_NAME}
+    # e.g. bash longest6/scripts/run_evaluation.sh ./carla_10 . TFPP
     ```
 
 
@@ -68,8 +79,8 @@ In this homework we will use 2 versions of CARLA, 0.9.10 and 0.9.14, the version
 2. Open another terminal
     ```shell
     cd HW0
-    bash longest6/scripts/local_evaluation.sh ${CARLA_ROOT} ${HOMEWORKD_ROOT} ${MODEL_NAME}
-    # e.g. bash longest6/scripts/local_evaluation.sh ./carla_10 . TFPP
+    bash DOS/leaderboard/scripts/run_evaluation.sh ${CARLA_ROOT} ${HOMEWORKD_ROOT} ${MODEL_NAME}
+    # e.g. bash longest6/scripts/local_evaluation.sh ./carla_10 . TCP
 
   [Paper](https://arxiv.org/pdf/2305.10507.pdf), [GitHub](https://github.com/opendilab/DOS)
 

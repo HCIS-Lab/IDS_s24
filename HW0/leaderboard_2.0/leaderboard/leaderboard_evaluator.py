@@ -465,7 +465,10 @@ def main():
                         help="Path to checkpoint used for saving live results")
 
     arguments = parser.parse_args()
-
+    
+    save_path = os.environ.get("SAVE_PATH")
+    os.makedirs(save_path, exist_ok=True)
+    
     statistics_manager = StatisticsManager(arguments.checkpoint, arguments.debug_checkpoint)
     leaderboard_evaluator = LeaderboardEvaluator(arguments, statistics_manager)
     crashed = leaderboard_evaluator.run(arguments)
