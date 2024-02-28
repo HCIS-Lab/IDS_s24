@@ -17,6 +17,13 @@ We expect you to start to investigate the topic of your midterm presentation and
 ## Setting up your environment
 In this homework we will use 2 versions of CARLA, 0.9.10 and 0.9.14, the version depending on which benchmark you choose. This section will guide you through the installation steps of both versions, and the corresponding version of each benchmark will be specified  in the [Benchmark](#benchmark) section.
 
+### Create conda environment
+```shell
+cd HW0
+conda env create -f environment.yml
+conda activate HW0
+```
+
 ### CARLA 0.9.10
   1. Download the packaged CARLA realse  
       ```shell
@@ -30,11 +37,7 @@ In this homework we will use 2 versions of CARLA, 0.9.10 and 0.9.14, the version
       ``` 
       If you see a screen like this, it means CARLA 0.9.10 is successfully installed.
       ![](./assets/carla_10_example.png)
-  3. Run manual_control, open another terminal
-      ```shell
-      cd carla_10/PythonAPI/examples
-      python manual_control.py
-      ``` 
+
 
 ### CARLA 0.9.14
   1. Download the packaged [CARLA release](https://leaderboard-public-contents.s3.us-west-2.amazonaws.com/CARLA_Leaderboard_2.0.tar.xz).
@@ -47,15 +50,11 @@ In this homework we will use 2 versions of CARLA, 0.9.10 and 0.9.14, the version
       If you see a screen like this, it means CARLA 0.9.14 is successfully installed.
       ![](./assets/carla_14_example.png)
 
-### Create conda environment
-```shell
-conda env create -f environment.yml
-```
-
 ### Manual control
-  open another terminal
+  Make sure your carla server is running and open another terminal
   ```shell
-  cd carla_14/PythonAPI/examples
+  conda activate HW0
+  cd ${CARLA_ROOT}/PythonAPI/examples
   python manual_control.py
   ``` 
 
@@ -134,4 +133,4 @@ conda env create -f environment.yml
   [Paper](https://arxiv.org/pdf/2210.14222.pdf), [GitHub](https://github.com/autonomousvision/plant)
 
 ## Submission
-Please submit a 1 minute video of you running mannul_control.py on 1 version of CARLA before 3/6 23:59, this sumbission accounts for 2% of your final score. 
+Please submit a 1 minute video of you running mannul_control.py on 1 version of CARLA before 3/6 23:59 to E3, this sumbission accounts for 2% of your final score. 
