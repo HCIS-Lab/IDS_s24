@@ -57,6 +57,7 @@ conda activate HW0
   cd ${CARLA_ROOT}/PythonAPI/examples
   python manual_control.py
   ``` 
+  ![](./assets/example.gif)
 
 ## Benchmark
 ### Longest6
