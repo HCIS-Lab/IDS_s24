@@ -88,9 +88,11 @@ conda activate HW0
     bash DOS/leaderboard/scripts/run_evaluation.sh ${CARLA_ROOT} ${HOMEWORK_DIR} ${MODEL_NAME}
     # e.g. bash longest6/scripts/local_evaluation.sh ./carla_10 . TCP
     ```
-3. Update [DOS/leaderboard/scripts/run_evaluation.sh](./DOS/leaderboard/scripts/run_evaluation.sh) by setting `ROUTES` to `DOS_benchmark/DOS_0X_town05.xml`, `SCENARIOS` to `DOS_benchmark/DOS_0X_town05.json` (where X is the scenario id), and ensuring that `TEAM_CONFIG`, `TEAM_AGENT`, and `CARLA_ROOT` are correctly configured.
 
-    [Paper](https://arxiv.org/pdf/2305.10507.pdf), [GitHub](https://github.com/opendilab/DOS)
+> **:heavy_exclamation_mark:**
+> There are 4 types of scenarios in DOS. To run different scenarios, update [DOS/leaderboard/scripts/run_evaluation.sh](./DOS/leaderboard/scripts/run_evaluation.sh) by setting `ROUTES` to `DOS_benchmark/DOS_0X_town05.xml`, `SCENARIOS` to `DOS_benchmark/DOS_0X_town05.json` (where X is the scenario id), and ensuring that `TEAM_CONFIG`, `TEAM_AGENT`, and `CARLA_ROOT` are correctly configured.
+
+  [Paper](https://arxiv.org/pdf/2305.10507.pdf), [GitHub](https://github.com/opendilab/DOS)
 
 
 
@@ -105,7 +107,11 @@ conda activate HW0
     cd HW0
     bash leaderboard_2.0/scripts/run_evaluation.sh ${CARLA_ROOT} ${HOMEWORK_DIR} ${MODEL_NAME}
     # e.g. bash leaderboard_2.0/scripts/run_evaluation.sh ./carla_14 . TFPP
-  [CARLA leaderboard 2.0](https://leaderboard.carla.org/get_started/)
+    ```
+> **:heavy_exclamation_mark:**
+> The length of original testing routes in leaderboard2.0 is up to several kilometers long, it might take hours to finish one route. Thus we select 6 similar scenarios that require agents to have the ability to by-pass constructions or slow moving objects. To change between these scenarios, update `ROUTES` in [./leaderboard2.0/scripts/run_evaluation.sh](./leaderboard2.0/scripts/run_evaluation.sh) with the path of .xml in [./leaderboard2.0/Data](./leaderboard2.0/Data).
+
+[CARLA leaderboard 2.0](https://leaderboard.carla.org/get_started/)
 
 ## Baseline
 ### Transfuser++
