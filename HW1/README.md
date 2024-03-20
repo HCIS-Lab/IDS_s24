@@ -6,8 +6,8 @@ You can use the environment of HW0 directly
 
 # Usage
 ```shell
-bash run.sh $MODEL $FORECAST_TIME $VALIDATE
-# e.g. bash run.sh learn 0.5 0
+bash run.sh $MODEL $ROOT_DIR $FORECAST_TIME $VALIDATE
+# e.g. bash run.sh learn ./HW1_dataset 0.5 0
 # $MODEL == constant setting is automatically run on validation set.
 ```
 
