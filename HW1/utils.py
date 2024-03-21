@@ -37,7 +37,8 @@ def get_relative_pos(ego_matrix, vehicle_matrix):
 
 def extract_yaw_from_matrix(matrix):
 	"""
- Extracts the yaw from a CARLA world matrix
+ Extracts the yaw from a CARLA world transformation matrix
+ In driving scene, most of the cars are on the same x-y plane, therefore, both pitch and role are 0.
  P.S. remember to normalize the angle
  """
 	# TODO
