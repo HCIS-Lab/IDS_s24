@@ -112,7 +112,7 @@ def draw_line(img, start_row, start_column, end_row, end_column, color=(255, 255
 def get_corner(box):
 	"""
 	Get the coordinate of 
- 	[top_left, top_right, bottom_left, bottom_right] from 
+ 	[top_left, top_right, bottom_right, bottom_left] from 
   x, y, extent_x, extenx_y, and yaw.
   
   return shape: [4, 2]
@@ -196,11 +196,11 @@ def quant_to_box(config, pred_bounding_boxes):
 	pred_bb_yaw = torch.argmax(pred_bb_yaw, dim=1)
 	pred_bb_speed = torch.argmax(pred_bb_speed, dim=1)
 
-	x_step = (config.max_x - config.min_x) / pow(2, config.learn_precision_pos)
-	y_step = (config.max_y - config.min_y) / pow(2, config.learn_precision_pos)
-	extent_step = (30) / pow(2, config.learn_precision_pos)
-	yaw_step = (2 * np.pi) / pow(2, config.learn_precision_angle)
-	speed_step = (config.learn_max_speed_pred / 3.6) / pow(2, config.learn_precision_speed)
+	x_step = (config.max_x - config.min_x) / pow(2, config.model_precision_pos)
+	y_step = (config.max_y - config.min_y) / pow(2, config.model_precision_pos)
+	extent_step = (30) / pow(2, config.model_precision_pos)
+	yaw_step = (2 * np.pi) / pow(2, config.model_precision_angle)
+	speed_step = (config.max_speed_pred / 3.6) / pow(2, config.model_precision_speed)
 
 	pred_bb_x = pred_bb_x * x_step - config.max_x
 	pred_bb_y = pred_bb_y * y_step - config.max_y
